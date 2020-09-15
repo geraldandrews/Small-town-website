@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css?family=Bitter');
+
+
+:root{
+  --mainBlue: #40ACF1;
+  --transparentBlue: rgba(64, 172, 241, 0.7);
+  --mainWhite: #FFFFFF;
+  --mainBlack: #292F36;
+  --mainGrey: rgb(216, 214, 214);
+  --mainYellow: #e3b505;
+  --mainGreen: #228b22;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: font-family: 'Great Vibes', cursive;
+   color: var(--mainBlack);
+   background: var(--mainGreen);
+}
+
+/* Global Styles */
+.bell-fonts {
+   font-family: 'La Belle Aurore', cursive; 
+} 
+
+/* section padding */
+.section-padding {
+   background: var(--mainWhite);
+   padding: 3rem 0;
+}
+
+/* grid container */
+.grid-container {
+   max-width: 90vw;
+   margin: 2rem auto;
+   display: grid;
+   grid-row-gap: 2rem;
+}
+
+@media screen and (min-width:768px){
+.grid-container--medium-2 {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-column-gap: 4rem;
+}
+
+.grid-container {
+   max-width: 75vw;
+ }
+}
+
+/* section */
+.section-title {
+   padding: 1rem 0.5rem;
+}
+
+.section-title--left {
+   margin-left: 10rem;
+}
+
+.section-title_name {
+   color: var(--mainGreen);
+   font-size: 3rem;
+   text-transform: capitalize;
+}
+
+.section-title_underline {
+   background: var(--mainGreen);
+   width: 5rem;
+   height: 0.25rem;
+}
+
+.section-title_text {
+   letter-spacing: 0.1rem;
+   line-height: 1.5;
+   margin-top: 1rem;
+   color: var(--mainGreen);
+}
+/* end of global styles */
+
+
+/* section title */
+.section-title--special {
+   background: var(--transparentBlue);
+   color: var(--mainWhite);
+   padding: 0.5rem 2rem;
+   clip-path: polygon(10% 0, 100% 0, 90% 100%,0 100%);
+}
+
+/* navbar */
+.navbar {
+   background: var(--mainGreen);
+}
+
+.navbar-icon {
+   font-size: 2rem;
+   color: var(--mainWhite);
+}
+
+.navbar-toggler {
+   outline-color: var(--mainWhite)!important;
+}
+
+.nav-link {
+   color: var(--mainWhite);
+   text-transform: capitalize;
+   font-family: cursive;
+   font-size: 1rem;
+}
+
+.nav-link:hover {
+   color: var(--mainBlue);
+}
+
+.nav-icon {
+   font-size: 1.5rem;
+   color: var(--mainWhite);
+   text-decoration: none!important;
+   transition-property: color;
+   transition-duration: 2s;
+   transition-timing-function: linear;
+}
+
+.nav-icon:hover {
+   color: var(--mainGrey);
+}
+
+/* header */
+.header {
+   clip-path: polygon(0 0,100% 0,100% 95%,50% 100%,0 95%);
+   color: var(--mainWhite);
+   overflow: hidden;
+}
+
+.height-max {
+   min-height: calc(100vh - 76px);
+   background: url('../img/Rocky Gap from above.jpg');
+   background-position: center;
+   background-size: cover;
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+   animation-name: zoom;
+   animation-duration: 20s;
+   animation-delay: 5s;
+   animation-iteration-count: infinite;
+}
+
+@keyframes zoom{
+0%{
+   transform: scale(1);
+}
+50%{
+   transform: scale(1.2) translateX(-5%)
+}
+100%{
+   transform: scale(1)
+ }
+}
+
+.title-heading {
+   font-family: Roboto;
+   background: rgba(0,0,0,0.4);
+   border-left: 0.3rem solid var(--mainGreen);
+}
+
+.text-uppercase {
+   font-family: 'Bitter', serif;
+}
+
+.title {
+   font-weight: 700;
+   font-size: 1.9rem;
+}
+
+@media screen and (min-width:768px){
+.title {
+   font-size: 3rem;
+ }
+}
+
+.title-icon {
+   color: var(--mainBlue);
+   text-decoration: none!important;
+}
+
+.title-icon:hover {
+   cover: var(--mainBlue);
+   opacity: 0.6;
+}
+
+/* Attractions */
+.section-title--special {
+   color: var(--mainGreen);
+   background: var(--mainWhite);
+}
+
+.font-weight-bold {
+   color: var(--mainWhite);
+}
+
+.paragraph {
+   color: var(--mainWhite);
+}
+
+.attraction-icon {
+   font-size: 3rem;
+   color: var(--mainGreen);
+   background: var(--mainWhite);
+}
+
+.attraction-icon:hover {
+   color: var(--mainYellow);
+}
+
+.attraction-underline {
+   width: 4rem;
+   height: 0.3rem;
+   background: var(--mainWhite);
+   margin: 1rem auto;
+}
+
+/* about */
+.about-container {
+   display: grid;
+   grid-template-columns: 100%;
+   grid-template-rows: auto 1fr;
+   grid-gap: 2rem;
+}
+
+.about_img-item {
+   margin-top: 25%;
+   width: 100%;
+   display: block;
+   height: auto;
+   border: 0.2rem solid var(--mainGrey);
+   border-radius: 0.25rem;
+}
+
+@media screen and (max-width:768px){
+.about_img-item {
+   height: auto;
+   margin: 0px;
+ }
+}
+
+
+@media screen and (min-width:768px){
+.about_img-special {
+   order: -1;
+}
+
+.about-container {
+   grid-template-rows: 1fr 1fr;
+ }
+}
+
+/* Background Photo */
+.background {
+   background: url('../img/Rocky Gap 2.jpg') no-repeat center center/cover;
+   background-attachment: fixed;
+   height: 100vh;
+} 
+
+/* Gallery */
+.gallery-bg{
+   background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("../img/rocky gap.jpg") center/cover fixed no-repeat;
+}
+
+.single-photo {
+   transition: all 0.3 linear;
+}
+
+.single-photo:hover {
+   box-shadow: 0 10px 15px rgb(0, 0, 0);
+}
+
+.img-container {
+   position: relative;
+   overflow: hidden;
+   cursor: pointer;
+}
+
+.photo-img {
+   transition: all 1s ease-in-out;
+}
+
+.img-container:hover .photo-img {
+   transform: scale(1.2);
+}
+
+.img-container:hover .store-item-icon {
+   transform: translate(0, 0);
+}
+
+.yearbook {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.book-icon {
+   font-size: 5.5rem;
+   color: var(--mainBlack);
+   display: inline;
+}
+
+.book-icon:hover {
+   color: var(--mainGrey);
+}
+
+/* footer icons */
+.footer {
+   background: var(--mainGreen);
+}
+
+.footer-icon {
+   font-size: 1.5rem;
+   text-decoration: none;
+   color: var(--mainWhite);
+   transition: all 1s ease-in-out;
+}
+
+.footer-icon:hover {
+   color: var(--mainGrey);
+}
+
