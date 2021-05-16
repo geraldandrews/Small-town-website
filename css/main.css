@@ -228,11 +228,9 @@ body {
    display: grid;
    grid-template-columns: 100%;
    grid-template-rows: auto 1fr;
-   grid-gap: 2rem;
 }
 
 .about_img-item {
-   margin-top: 25%;
    width: 100%;
    display: block;
    height: auto;
