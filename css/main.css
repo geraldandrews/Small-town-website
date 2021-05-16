@@ -109,7 +109,6 @@ body {
 .nav-link {
    color: var(--mainWhite);
    text-transform: capitalize;
-   font-family: cursive;
    font-size: 1rem;
 }
 
