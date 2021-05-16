@@ -42,7 +42,7 @@ body {
    grid-row-gap: 2rem;
 }
 
-@media screen and (min-width:768px){
+@media screen and (min-width:1100px){
 .grid-container--medium-2 {
    display: grid;
    grid-template-columns: 1fr 1fr;
@@ -240,15 +240,7 @@ body {
    border-radius: 0.25rem;
 }
 
-@media screen and (max-width:768px){
-.about_img-item {
-   height: auto;
-   margin: 0px;
- }
-}
-
-
-@media screen and (min-width:768px){
+@media screen and (min-width:1100px){
 .about_img-special {
    order: -1;
 }
