@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Bitter');
-
+@import url('https://fonts.googleapis.com/css2?family=Exo&display=swap');
 
 :root{
   --mainBlue: #40ACF1;
@@ -18,14 +18,14 @@
 }
 
 body {
-   font-family: 'Grandstander', cursive;
+   font-family: 'Exo', sans-serif;
    color: var(--mainBlack);
    background: var(--mainGreen);
 }
 
 /* Global Styles */
 .bell-fonts {
-   font-family: 'La Belle Aurore', cursive; 
+   font-family: 'Exo', sans-serif; 
 } 
 
 /* section padding */
