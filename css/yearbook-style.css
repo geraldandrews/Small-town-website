@@ -16,8 +16,7 @@ h1 {
 }
 
 h1.two {
-   text-align: center;
-   margin: 10px 0px;
+   margin: 0em auto 1em auto
 }
 
 h2 {
