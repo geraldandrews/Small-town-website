@@ -252,7 +252,7 @@ body {
 .background {
    background: url('../img/Rocky Gap 2.jpg') no-repeat center center/cover;
    background-attachment: fixed;
-   height: 0vh;
+   height: 100vh;
 } 
 
 /* Gallery */
