@@ -18,7 +18,7 @@
 }
 
 body {
-   font-family: font-family: 'Great Vibes', cursive;
+   font-family: 'Grandstander', cursive;
    color: var(--mainBlack);
    background: var(--mainGreen);
 }
@@ -263,7 +263,7 @@ body {
 .background {
    background: url('../img/Rocky Gap 2.jpg') no-repeat center center/cover;
    background-attachment: fixed;
-   height: 100vh;
+   height: 0vh;
 } 
 
 /* Gallery */
@@ -328,4 +328,5 @@ body {
 .footer-icon:hover {
    color: var(--mainGrey);
 }
+
 
