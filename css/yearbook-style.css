@@ -141,6 +141,10 @@ img {
   padding: 10px 25px;
 }
 
+.link-btn:hover {
+  background: #228b22;
+}
+
 /* Add a transparency effect for thumnbail images */
 .demo {
   opacity: 0.6;
