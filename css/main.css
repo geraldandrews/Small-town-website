@@ -286,6 +286,14 @@ body {
    transform: translate(0, 0);
 }
 
+.vintage-card-body {
+   padding: 0;
+}
+
+.vintage-card-body h5, p {
+   margin: 5px 0;
+}
+
 .yearbook {
    display: flex;
    justify-content: center;
