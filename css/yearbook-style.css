@@ -123,6 +123,24 @@ img {
   border: 1px solid #fff;
 }
 
+.yearbooks-link {
+  background: #fff;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.yearbooks-link a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.link-btn {
+  background: #002100;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 25px;
+}
+
 /* Add a transparency effect for thumnbail images */
 .demo {
   opacity: 0.6;
