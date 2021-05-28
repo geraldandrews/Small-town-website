@@ -41,18 +41,30 @@ img {
 
 .container {
   position: relative;
-  max-width: 550px;
+  width: 30%;
   overflow: visible;
   margin: 25px auto;
   border: 3px solid #fff;
   border-radius: 5px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1024px) {
+  .container {
+     width: 50%;
+    }
+  }
+  
+@media only screen and (max-width: 768px) {
 .container {
-   width: 85%;
- }
+   width: 75%;
+  }
 }
+
+@media only screen and (max-width: 600px) {
+  .container {
+     width: 85%;
+    }
+  }
 
 /* Hide the images by default */
 .mySlides {
