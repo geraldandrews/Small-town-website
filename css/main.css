@@ -777,6 +777,7 @@ body {
 
    .government .government-intro .intro-text {
       width: 100%;
+     padding: 0px 15px;
    }
 
    .government .cards-container {
