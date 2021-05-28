@@ -143,7 +143,7 @@ body {
    opacity: 0;
 }
 
-.dropdown.show .dropdown-menu { /* For Bootstrap 4, use .dropdown.show instead of .dropdown.open */
+.dropdown.show .dropdown-menu { 
    max-height: 300px;
    opacity: 1;
 }
