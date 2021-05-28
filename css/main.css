@@ -30,7 +30,7 @@ body {
 
 /* section padding */
 .section-padding {
-   background: var(--mainWhite);
+   background: var(--mainWhite); 
    padding: 3rem 0;
 }
 
