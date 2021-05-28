@@ -44,7 +44,7 @@ img {
   position: relative;
   max-width: 550px;
   overflow: visible;
-  margin: auto;
+  margin: 25px auto;
   border: 3px solid #fff;
 }
 
