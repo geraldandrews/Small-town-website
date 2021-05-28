@@ -46,6 +46,7 @@ img {
   overflow: visible;
   margin: 25px auto;
   border: 3px solid #fff;
+  border-radius: 5px;
 }
 
 @media only screen and (max-width: 600px) {
