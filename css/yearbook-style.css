@@ -16,7 +16,7 @@ h1 {
 }
 
 h1.two {
-   margin: 0em auto 1em auto
+   margin: 0em auto 1em auto;
 }
 
 h2 {
@@ -127,6 +127,7 @@ img {
   background: #fff;
   color: #fff;
   padding: 10px 0;
+  text-align: center;
 }
 
 .yearbooks-link a {
@@ -139,7 +140,6 @@ img {
   border: none;
   border-radius: 5px;
   padding: 10px 25px;
-  cursor: pointer;
 }
 
 .link-btn:hover {
