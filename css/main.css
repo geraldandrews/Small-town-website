@@ -541,10 +541,6 @@ body {
    .community .info-section2 {
       grid-template-columns: 1fr;
    }
-  
-  .community .logo-img img {
-      width: 25%;
-   }
 }
 
 @media (max-width: 768px) {
