@@ -823,12 +823,16 @@ body {
    transform: translate(0, 0);
 }
 
-.vintage-card-body {
+.card-body, .vintage-card-body {
    padding: 0;
 }
 
+.card-body h5, p {
+   margin: 5px 0px;
+}
+
 .vintage-card-body h5, p {
-   margin: 5px 0;
+   margin: 5px 0px;
 }
 
 #gallery .container .hs-img {
