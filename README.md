@@ -1,2 +1,2 @@
 # Small Town Website
-### [Live Site] (https://https://rockygapva.netlify.app/)
+### [Live Site] (https://rockygapva.netlify.app/)
