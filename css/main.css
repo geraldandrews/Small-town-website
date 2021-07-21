@@ -547,7 +547,7 @@ body {
 
 @media (max-width: 768px) {
    .community .logo-img img {
-      margin-top: 0px;
+      margin-top: 15px;
   }
   
    .community .info-section .card {
