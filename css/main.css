@@ -546,6 +546,10 @@ body {
 }
 
 @media (max-width: 768px) {
+   .community .logo-img img {
+      margin-top: 0px;
+  }
+  
    .community .info-section .card {
       width: 45%;
       margin: 30px 40px;
