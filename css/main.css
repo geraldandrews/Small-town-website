@@ -124,6 +124,7 @@ body {
    transition-property: color;
    transition-duration: 2s;
    transition-timing-function: linear;
+   margin-right: 2px;
 }
 
 .nav-icon:hover {
