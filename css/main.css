@@ -867,7 +867,7 @@ body {
    color: var(--mainGrey);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 820px) {
    #gallery .container .hs-img {
       width: 70%;
    }
