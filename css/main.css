@@ -546,7 +546,7 @@ body {
    }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 820px) {
    .community .logo-img img {
       margin-top: 15px;
   }
