@@ -149,7 +149,7 @@ body {
    opacity: 1;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 820px) {
    .dropdown .dropdown-menu {
       padding: 0px;
    }
