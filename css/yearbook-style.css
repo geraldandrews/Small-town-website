@@ -65,10 +65,6 @@ img {
   background: none;
   border: none;
   cursor: pointer;
-  /*position: absolute;*/
- /* top: 40%; */
- /* width: auto;*/
- /* margin-top: -50px; */
   color: #000;
   font-weight: bold;
   font-size: 1.5rem;
@@ -81,18 +77,7 @@ img {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-
 }
-
-/*#next-button {
-  right: 10rem;
-  border-radius: 3px 0 0 3px;
-}*/
-
-/*#prev-button:hover,
-#next-button:hover {
-  background: rgba(0, 0, 0, 0.8);
-}*/
 
 #caption-container {
   background: #002100;
