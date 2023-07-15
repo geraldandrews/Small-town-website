@@ -1,28 +1,58 @@
-var slideIndex = 1;
-showSlides(slideIndex);
+let current = document.querySelector('#current');
+const imgs = document.querySelector('.imgs');
+const img = document.querySelectorAll('.imgs img');
+const mainImg = document.getElementById('main-img');
+const prevButton = document.getElementById('prev-button');
+const nextButton = document.getElementById('next-button');
+let captionContainer = document.getElementById('caption-container');
+const opacity = 0.6;
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+let images = [];
+for(let idx=0; idx <= 65; idx+=1) {
+images.push(`img/img-${idx}.jpg`);
 }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+let currentIndex = 0;
+
+prevButton.addEventListener('click', () => {
+  currentIndex = (currentIndex - 1 + images.length) % images.length;
+  updateImage(); 
+  fadeImages();
+  img[currentIndex].style.opacity = "0.6";
+});
+
+nextButton.addEventListener('click', () => {
+  currentIndex = (currentIndex + 1) % images.length;
+  updateImage();
+  fadeImages();
+  img[currentIndex].style.opacity = "0.6";
+});
+
+function updateImage() {
+  let current = mainImg.querySelector('#current');
+  current.src = images[currentIndex];
+  current.classList.add('fade-out');
+  setTimeout(() => current.classList.remove('fade-out'), 500);
+  captionContainer.innerHTML = img[currentIndex].alt; 
 }
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
+document.getElementById('caption-container').innerHTML = "Rocky Gap High School 1953";
+
+img[0].style.opacity = opacity;
+
+const fadeImages = () => { 
+  img.forEach(img=> img.style.opacity = '1')
 }
+
+img.forEach((img, index) => { 
+  img.addEventListener('click', (e) => { 
+    current.src = e.target.src;
+    fadeImages();
+    img.style.opacity = '0.6';
+    currentIndex = index;
+    current.classList.add('fade-out');
+    setTimeout(() => current.classList.remove('fade-out'), 500);
+    captionContainer.innerHTML = img.getAttribute('alt');
+  });
+});
+
