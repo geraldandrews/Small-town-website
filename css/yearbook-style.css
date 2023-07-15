@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 body {
-  background: url("../yearbook-img/background.jpg");
+  font-family: "Sans-Serif";
+  background-image: url("img/background.jpg");
   font-family: 'Poppins', sans-serif;
 }
 
@@ -9,6 +10,23 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+h1 {
+   color: #fff;
+   text-align: center;
+   line-height: 0em;
+   margin-top: 1em;
+}
+
+h1.two {
+   margin: 0em auto 1em auto;
+}
+
+img {
+  width: 25%;
+  display: block;
+  margin: 0 auto;
 }
 
 .container {
@@ -47,6 +65,10 @@ body {
   background: none;
   border: none;
   cursor: pointer;
+  /*position: absolute;*/
+ /* top: 40%; */
+ /* width: auto;*/
+ /* margin-top: -50px; */
   color: #000;
   font-weight: bold;
   font-size: 1.5rem;
@@ -61,6 +83,16 @@ body {
   user-select: none;
 
 }
+
+/*#next-button {
+  right: 10rem;
+  border-radius: 3px 0 0 3px;
+}*/
+
+/*#prev-button:hover,
+#next-button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}*/
 
 #caption-container {
   background: #002100;
@@ -249,3 +281,4 @@ body {
     font-size: 0.8rem;
   }
 }
+
