@@ -9,7 +9,7 @@ const opacity = 0.6;
 
 let images = [];
 for(let idx=0; idx <= 65; idx+=1) {
-images.push(`img/yearbook-${idx}.jpg`);
+images.push(`yearbook-img/img-${idx}.jpg`);
 }
 
 let currentIndex = 0;
