@@ -55,4 +55,3 @@ img.forEach((img, index) => {
     captionContainer.innerHTML = img.getAttribute('alt');
   });
 });
-
