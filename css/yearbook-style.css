@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 body {
-  font-family: "Sans-Serif";
-  background-image: url("../yearbook-img/background.jpg");
+  background: url('../yearbook-img/background.jpg');
   font-family: 'Poppins', sans-serif;
 }
 
@@ -10,23 +9,6 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-h1 {
-   color: #fff;
-   text-align: center;
-   line-height: 0em;
-   margin-top: 1em;
-}
-
-h1.two {
-   margin: 0em auto 1em auto;
-}
-
-img {
-  width: 25%;
-  display: block;
-  margin: 0 auto;
 }
 
 .container {
@@ -99,7 +81,6 @@ img {
   align-items: center;
   width: 50%;
   padding: 0 0 0 5px;
-  margin-bottom: 10px;
 }
 
 .gallery-container h2 {
@@ -147,18 +128,19 @@ img {
 }
 
 .school-banner {
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 .school-banner h1 {
   color: #228b22;
   text-transform: uppercase;
+  text-align: center;
   font-size: 1.5rem;
 }
 
 .gallery-container .banner-img  {
   width: 100%;
-  margin-top: 25px;
+  margin-top: 10px;
 }
 
 /* Fade in animation */
@@ -235,6 +217,10 @@ img {
   .gallery-container h2 {
     font-size: 1.3rem;
   }
+
+  .school-banner {
+    margin-top: 25px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -266,4 +252,3 @@ img {
     font-size: 0.8rem;
   }
 }
-
