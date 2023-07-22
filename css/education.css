@@ -1,0 +1,157 @@
+/** Education **/
+.education {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px;
+ }
+ 
+ .education h1 {
+    font-size: 2rem
+ }
+ 
+ .education h5 {
+    font-size: 1.2rem;
+ }
+ 
+ .education img {
+    margin: 15px 0px;
+ }
+ 
+ .education .elementary-img {
+    width: 20%;
+ }
+ 
+ .education .elementary-img2 {
+    width: 100%;
+ }
+ 
+ .education .schools-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ .education .schools-img img {
+    width: 35%;
+    margin: 25px;
+    border-radius: 5px;
+    border: 0.2rem solid var(--mainGrey);
+ }
+ 
+ .education .elementary-img2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ .education .elementary-img2 img {
+    width: 35%;
+    border-radius: 5px;
+    border: 0.2rem solid var(--mainGrey);
+    margin: 25px;
+ }
+ 
+ .education .btn {
+    background: #d54900;
+    border: 2px solid #303131;
+    margin: 10px 0;
+    padding: 10px 25px;
+    border-radius: 5px;
+ }
+ 
+ .education .btn a {
+    color: #fff;
+    text-decoration: none;
+ }
+ 
+ .education .btn:hover {
+    background: #ff8600;
+ }
+ 
+ .education .info-text {
+    width: 75%;
+    text-align: center;
+ }
+ 
+ .education .card-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+    padding: 25px;
+ }
+ 
+ .education .card-section .card {
+    border: none;
+    background: var(--mainGrey);
+    border-radius: 5px;
+ }
+ 
+ .education .card-section .card h5 {
+    background: #323131;
+    color: #fff;
+    padding: 5px 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+ }
+ 
+ .education .card-section .card p {
+    margin: 10px;
+ }
+ 
+ @media (max-width: 820px) {
+    .education .card-section {
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+    }
+ 
+    .education .card-section .card {
+       width: 45%;
+    }
+ 
+    .education .elementary-img {
+       width: 30%;
+    }
+ }
+ 
+ @media (max-width: 600px) {
+    .education h1 {
+       font-size: 1.6rem;
+    }
+ 
+    .education .schools-img {
+       flex-direction: column;
+    }
+ 
+    .education .schools-img img {
+       width: 75%;
+    }
+ 
+    .education .elementary-img {
+       width: 50%;
+    }
+ 
+    .education .elementary-img2 img {
+       width: 75%;
+    }
+ 
+    .education .card-section {
+       display: grid;
+       grid-template-columns: 1fr;
+       justify-items: center;
+    }
+ 
+    .education .card-section .card {
+       width: 95%;
+    }
+ 
+    .education .info-text {
+       text-align: center;
+       width: 80%;
+    }
+ }
+ 
+ 

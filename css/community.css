@@ -1,0 +1,240 @@
+/** Community **/
+.community {
+    background: var(--mainWhite);
+ }
+ 
+ .community h1 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 25px 0px;
+ }
+ 
+ .community .overview-text p {
+    padding: 25px 75px;
+    text-align: center;
+ }
+ 
+ .community .community-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ .community .community-img img {
+    width: 35%;
+    border: 0.2rem solid var(--mainGrey);
+    border-radius: 5px;
+    margin: 15px 0px;
+ }
+ 
+ .community .community-img .img-2 {
+    width: 15%;
+    border: none;
+    margin: 75px;
+ 
+ }
+ 
+ .community .info-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ }
+ 
+ 
+ .community .info-section .card h5 {
+    text-align: center;
+    font-size: 1.2rem;
+ }
+ 
+ .community .info-section .card p {
+    text-align: center;
+    padding: 0px;
+    font-weight: bolder;
+    line-height: 20px;
+ }
+ 
+ .community .info-section .card img {
+    border: 0.2rem solid var(--mainGrey);
+    border-radius: 5px;
+    margin: 5px 0px;
+ }
+ 
+ .community .info-section .card .btn {
+    background: var(--mainBlack);
+    display: block;
+    margin: 10px auto;
+    padding: 10px 25px;
+    border: 0.2rem solid var(--mainGrey);
+    border-radius: 5px;
+    font-family: 'Exo', sans-serif;
+ }
+ 
+ .community .info-section .card .btn:hover {
+    opacity: 0.7;
+ }
+ 
+ .community .info-section .card .btn a {
+    color: var(--mainWhite);
+    text-decoration: none;
+ }
+ 
+ .community .logo-img img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    width: 50%;
+    border: 0.2rem solid var(--mainGrey);
+    border-radius: 5px;
+ }
+ 
+ .community .info-section2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 75px;
+    padding: 50px 75px;
+ }
+ 
+ .community .info-section2 .card {
+    border: none;
+    border-radius: 5px;
+    background: var(--mainGrey);
+ }
+ 
+ .community .info-section2 .card h5 {
+    background: var(--mainBlack);
+    color: var(--mainWhite);
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding: 5px 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+ }
+ 
+ .community .info-section2 .card h6 {
+    font-size: 1rem;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 10px;
+ }
+ 
+ .community .info-section2 .card p {
+    text-align: center;
+    line-height: 15px;
+    margin: 10px 0;
+ }
+ 
+ .community .info-section2 .card .links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+ }
+ 
+ .community .info-section2 .card .links a {
+    margin: 0px 8px;
+ }
+ 
+ .community .info-section2 .card a {
+    color: var(--mainBlack);
+    text-align: center;
+    font-size: 2rem;
+    cursor: pointer;
+ }
+ 
+ .community .info-section2 .card a:hover {
+    color: var(--mainBlue);
+ }
+ 
+ @media (max-width: 1024px) {
+    .community .info-section .card img {
+       width: 100%;
+    }
+ 
+    .community .community-img .img-2 {
+        width: 18%;
+        margin: 30px;
+    }
+ 
+    .community .info-section2 {
+      /* grid-template-columns: repeat(2, 1fr); */
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+ 
+    .community .info-section2 .card {
+       width: 45%;
+    }
+ }
+ 
+ @media (max-width: 820px) {
+    .community .logo-img img {
+       margin-top: 15px;
+   }
+ 
+   .community .info-section .card {
+       width: 45%;
+   }
+ 
+   .community .logo-img img {
+      width: 65%;
+      margin-top: 25px;
+   }
+ 
+ .community .info-section2 .card {
+      width: 75%;
+   }
+ }
+ 
+ 
+ @media (max-width: 600px) {
+    .community h1 {
+       font-size: 35px;
+    }
+ 
+    .community .community-img {
+       flex-direction: column;
+    } 
+ 
+    .community .community-img .img-2:nth-child(3) {
+       display: none;
+    }
+ 
+    .community .community-img img {
+       width: 75%;
+    }
+ 
+    .community .community-img .img-2 {
+       width: 50%;
+       margin: 5px 0px;
+    }
+ 
+    .community .overview-text p {
+       padding: 15px 30px;
+       text-align: center;
+    }
+ 
+    .community .info-section {
+       flex-direction: column;
+    }
+ 
+    .community .info-section .card {
+       width: 75%;
+       margin: 15px 0;
+    }
+ 
+    .community .logo-img img {
+       width: 85%;
+    }
+ 
+    .community .info-section2 {
+       padding: 50px 0;
+    }
+ 
+    .community .info-section2 .card {
+       width: 85%;
+    }
+ }
+ 
+ 

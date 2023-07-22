@@ -1,0 +1,248 @@
+/* GALLERY */
+.gallery-background {
+    background: var(--mainWhite);
+    padding: 25px 0 25px 0;
+ }
+ 
+ .gallery-background h1 {
+    text-align: center;
+    font-weight: 300;
+    text-transform: capitalize;
+    color: var(--mainGreen)
+ }
+ 
+ .gallery-background .gallery-bold {
+    font-weight: bold;
+ }
+ 
+ .gallery-container {
+    background: var(--mainGrey);
+    max-width: 1100px;
+    margin: 25px auto;
+    padding: 3px;
+    border-radius: 5px;
+ }
+ 
+ .gallery {
+    display: flex;
+    flex-wrap: wrap;
+ }
+ 
+ .gallery .gallery-img {
+    padding: 3px;
+    width: calc(100% / 3);
+ }
+ 
+ .gallery .gallery-img span {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+ }
+ 
+ .gallery .gallery-img img {
+    width: 100%;
+    vertical-align: middle;
+    transition: all 0.3s ease;
+ }
+ 
+ .gallery .gallery-img:hover img {
+    transform: scale(1.1);
+    opacity: 0.6;
+ }
+  
+ .main-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
+    background: #fff;
+    color: var(--mainGreen);
+    max-width: 700px;
+    width: 100%;
+    z-index: 5;
+    opacity: 0;
+    pointer-events: none;
+    border-radius: 3px;
+    padding: 0 5px 5px 5px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+ }
+ 
+ .main-box.show {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+    transition: all 0.3s ease;
+ }
+ 
+ .main-box .top-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 15px 12px 10px;
+ }
+ 
+ .main-box .top-content .title {
+    display: flex;
+    font-size: 18px;
+    font-weight: 400;
+ }
+ 
+ .top-content .title p {
+    margin: 0 5px;
+ }
+ 
+ .top-content .title p.current-img {
+    font-weight: 500;
+ }
+ 
+ .top-content .icon {
+    font-size: 20px;
+    cursor: pointer;
+ }
+ 
+ .main-box .img-box {
+    display: flex;
+    width: 100%;
+    position: relative;
+ }
+ 
+ .img-box .slide {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    height: 50px;
+    width: 60px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 3px;
+ }
+ 
+ .slide.prev {
+    left: 0px;
+ }
+ 
+ .slide.next {
+    right: 0px;
+ }
+ 
+ .img-box img {
+    width: 100%;
+    border-radius: 3px;
+ }
+ 
+ .img-shadow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    display: none;
+    background: rgba(0,0,0,0.45);
+ }
+ 
+ .main-box .bottom-content {
+   /* padding: 12px 15px 12px 10px; */
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+ }
+ 
+ .main-box .bottom-content img {
+    width: 8%;
+    margin: 0 5px;
+ }
+ 
+ #caption {
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 5px 0;
+    margin: auto;
+ }
+ 
+ /* Fade in animation */
+ @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+ }
+  
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in 1 forwards;
+ }
+ 
+ .yearbook-link {
+    text-align: center;
+ }
+ 
+ .yearbook-link h1 {
+    margin: 25px 0;
+ }
+ 
+ .yearbook-link a {
+    margin: 0 auto;
+    text-decoration: none;
+ }
+ 
+ .yearbook-link a:hover {
+    opacity: 0.6;
+ }
+ 
+ .yearbook-link img {
+    width: 10%;
+    display: inline;
+    margin: 0 auto;
+ }
+ 
+ .yearbook-link img:nth-child(3) {
+    width: 65%;
+    display: block;
+    margin: 25px auto;
+    border: 0.3rem solid var(--mainGrey);
+    border-radius: 5px;
+ }
+ 
+ @media(max-width: 1024px) {
+    .gallery-container {
+        width: 80%;
+    }
+    
+ }
+ 
+ @media (max-width: 820px) {
+    .gallery .gallery-img {
+       width: calc(100% / 2);
+    }
+ 
+    .gallery-background {
+       padding: 25px 0 5px 0;
+    }
+ 
+    .yearbook-link img {
+       width: 15%;
+    }
+ }
+ 
+  @media(max-width: 600px) {
+    .gallery-background {
+       padding: 25px 0 5px 0;
+    }
+    .gallery .gallery-img {
+      width: 100%;
+      padding: 4px;
+    }
+ 
+    .main-box.show {
+       width: 95%;
+    }
+ 
+    .yearbook-link img {
+       width: 25%;
+    }
+ }
+ 

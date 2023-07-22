@@ -1,0 +1,191 @@
+/** Government **/
+.government {
+    background: #fff;
+ }
+ 
+ .government h1 {
+    padding: 25px 0px;
+    text-align: center;
+    font-size: 2rem;
+ }
+ 
+ .government .logos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    margin: 25px 0;
+ }
+ 
+ .government .logos img {
+    width: 25%;
+ }
+ 
+ .government .government-intro {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+    box-shadow: 0 10px 15px rgb(0, 0, 0, 0.7);
+    border-radius: 5px;
+ }
+ 
+ .government .government-intro .government-img h3 {
+    text-align: center;
+ }
+ 
+ .government .government-intro .government-img {
+    width: 50%;
+    border-right: 1px dashed rgb(0, 0, 0, 0.7);
+ }
+ 
+ .government .government-intro .government-img img {
+    width: 75%;
+    display: block;
+    margin: 10px auto;
+    border-radius: 5px;
+ }
+ 
+ .government .government-intro .government-img p {
+    text-align: center;
+ }
+ 
+ .government .government-intro .intro-text {
+    width: 50%;
+ }
+ 
+ .government .government-intro .intro-text h3, h6{
+    text-align: center;
+ }
+ 
+ .government .government-intro .intro-text .bold {
+    font-weight: bolder;
+ }
+ 
+ .government .government-intro .intro-text p {
+    text-align: center;
+    line-height: 35px;
+ }
+ 
+ .government .cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 25px;
+    margin: 50px 150px;
+ }
+ 
+ .government .cards-container .card {
+    border: none;
+    background: var(--mainGrey);
+    margin: 50px 0px;
+ }
+ 
+ .government .cards-container .card .department-info {
+    padding: 10px 0;
+ }
+ 
+ .government .cards-container .card h5 {
+    background: var(--mainBlack);
+    color: var(--mainWhite);
+    padding: 5px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    text-align: center;
+ }
+ 
+ .government .cards-container .card .bold {
+    font-weight: bolder;
+ }
+ 
+ .government .cards-container .card p {
+    text-align: center;
+ }
+ 
+ .government .cards-container .card img {
+    width: 50%;
+    display: block;
+    margin: 45px auto;
+    border-radius: 8px;
+ }
+ 
+ .government img {
+    width: 100%;
+    display: block;
+ }
+ 
+ @media (max-width: 1024px) {
+    .government .cards-container .card img {
+       margin: 60px auto;
+    }
+ }
+ 
+ @media (max-width: 820px) {
+    .government .logos img {
+       width: 35%;
+    }
+ 
+    .government .government-intro {
+       flex-direction: column;
+    }
+ 
+    .government .government-intro .government-img {
+       width: 75%;
+       border-right: none;
+       border-bottom: 1px dashed rgb(0, 0, 0, 0.7);
+       padding-bottom: 15px;
+    }
+ 
+    .government .government-intro .intro-text {
+       width: 75%;
+       margin-top: 15px;
+    }
+ 
+    .government .cards-container {
+       grid-template-columns: 1fr;
+    }
+ 
+    .government .cards-container .card img {
+       margin: 15px auto;
+    }
+ }
+ 
+ @media (max-width: 600px) {
+    .government h1 {
+       margin: 5px 0px;
+    }
+ 
+    .government .logos {
+       margin-top: 5px;
+    }
+ 
+    .government .logos img {
+       width: 55%;
+    }
+ 
+    .government .government-intro {
+       width: 100%;
+       box-shadow: none;
+       padding: 0px;
+    }
+ 
+    .government .government-intro .government-img {
+       width: 85%;
+    }
+ 
+    .government .government-intro .government-img img {
+       margin: 10px auto;
+    }
+ 
+    .government .government-intro .intro-text {
+       width: 100%;
+    }
+ 
+    .government .cards-container {
+       margin: 0px 25px;
+       grid-gap: 0px;
+    }
+ }
+ 
+ 
