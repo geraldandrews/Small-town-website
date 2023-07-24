@@ -69,18 +69,18 @@
     font-family: 'Exo', sans-serif;
  }
 
+ @media (hover: hover) {
+   .community .info-section .card .btn:hover {
+      opacity: 0.6;
+   }
+}
+
  .community .info-section .card .btn a {
     color: var(--mainWhite);
     text-decoration: none;
  }
 
- @media (hover: hover) {
-   .community .info-section .card .btn a:hover {
-      opacity: 0.6;
-   }
-}
- 
- .community .logo-img img {
+  .community .logo-img img {
     display: block;
     margin-left: auto;
     margin-right: auto;
