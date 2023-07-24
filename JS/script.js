@@ -38,19 +38,6 @@ dropDown.addEventListener("click", function () {
     }
  });
 
-// External Links 
-const onMouseEnter = () => {
-	document.querySelectorAll('a').blur()
-}
-
-document.addEventListener("visibilitychange", function() {
-  if (document.visibilityState === 'visible') {
-  	document.addEventListener('mouseenter', () => {
-      onMouseEnter()
-      document.removeEventListener('mouseenter', onMouseEnter)
-    })
-  }
-});
   
   
   
