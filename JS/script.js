@@ -40,7 +40,7 @@ dropDown.addEventListener("click", function () {
 
 // External Links 
 const onMouseEnter = () => {
-	document.querySelector('a').blur()
+	document.querySelectorAll('a').blur()
 }
 
 document.addEventListener("visibilitychange", function() {
