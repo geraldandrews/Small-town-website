@@ -66,11 +66,12 @@
     color: #fff;
     text-decoration: none;
  }
- 
- .education .btn:hover:not(:focus-within) {
-   transition: opacity 0.6s step-end;
-   background: #ff8600 ;
- }
+
+@media (hover: hover) {
+   .education .btn:hover {
+      background: #ff8600;
+   }
+}
  
  .education .info-text {
     width: 75%;
