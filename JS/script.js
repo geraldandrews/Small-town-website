@@ -37,6 +37,20 @@ dropDown.addEventListener("click", function () {
        links.classList.remove("extend-navbar");
     }
  });
+
+// External Links 
+const onMouseEnter = () => {
+	document.querySelector('a').blur()
+}
+
+document.addEventListener("visibilitychange", function() {
+  if (document.visibilityState === 'visible') {
+  	document.addEventListener('mouseenter', () => {
+      onMouseEnter()
+      document.removeEventListener('mouseenter', onMouseEnter)
+    })
+  }
+});
   
   
   
