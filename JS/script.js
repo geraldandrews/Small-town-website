@@ -38,7 +38,7 @@ dropDown.addEventListener("click", function () {
     }
  });
 
-let anchorSelector = '#section a[href^="#"]';
+let anchorSelector = '#section';
 let anchorList = document.querySelectorAll(anchorSelector);
 
     anchorList.forEach(anchorLink => {
