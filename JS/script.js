@@ -1,7 +1,6 @@
 // NAVIGATION BAR //
 const navToggle = document.querySelector(".nav-toggle");
 const links = document.querySelector(".nav-links");
-const link = document.querySelectorAll(".nav-link");
 const hamburger = document.getElementById('hamburger');
 const dropDown = document.querySelector('.dropdown');
 const subMenu = document.querySelector('.sub-menu');
@@ -19,6 +18,14 @@ navToggle.addEventListener("click", function () {
      links.classList.add("show-links");
    }
 }); 
+
+const link = document.querySelectorAll('.nav-links a')
+
+link.forEach(l => {
+  l.addEventListener('click', () => {
+    links.classList.remove('show-links')
+  })
+})
 
 dropDown.addEventListener("click", function () {
      if (subMenu.classList.contains("show-dropdown")) {
