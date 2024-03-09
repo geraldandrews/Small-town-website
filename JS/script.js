@@ -24,8 +24,8 @@ const link = document.querySelectorAll('.nav-links a')
 link.forEach(l => {
   l.addEventListener('click', () => {
     links.classList.remove('show-links')
-  })
-})
+  });
+});
 
 dropDown.addEventListener("click", function () {
      if (subMenu.classList.contains("show-dropdown")) {
