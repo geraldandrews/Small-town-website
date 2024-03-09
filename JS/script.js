@@ -47,8 +47,6 @@ let anchorList = document.querySelectorAll(anchorSelector);
       hamburger.classList.toggle('cross');
       subMenu.classList.remove("show-dropdown");
       links.classList.remove("extend-navbar");
-
-      e.preventDefault();
     }
   });
  
