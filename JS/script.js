@@ -1,6 +1,7 @@
 // NAVIGATION BAR //
 const navToggle = document.querySelector(".nav-toggle");
 const links = document.querySelector(".nav-links");
+const link = document.querySelector(".nav-link");
 const hamburger = document.getElementById('hamburger');
 const dropDown = document.querySelector('.dropdown');
 const subMenu = document.querySelector('.sub-menu');
@@ -31,7 +32,7 @@ dropDown.addEventListener("click", function () {
      }
   });
 
-  document.addEventListener('click', function(event){
+  document.addEventListener("click", function(event){
     const yourContainer = document.querySelector('nav-links');
     if(!links.contains(event.target)) {
        links.classList.remove("extend-navbar");
