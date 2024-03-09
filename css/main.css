@@ -8,6 +8,11 @@
 /** Fonts **/
 @import url('https://fonts.googleapis.com/css?family=Bitter');
 @import url('https://fonts.googleapis.com/css2?family=Exo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
 
 /** Variables **/
 :root{
@@ -51,48 +56,34 @@ a {
 }
 
 .header-container {
-   min-height: calc(100vh - 76px);
-   background: url('../img/Rocky Gap from above.jpg');
+   background: url('../img/bg.png');
    background-position: center;
    background-size: cover;
-   background-attachment: fixed;
    background-repeat: no-repeat;
-   animation-name: zoom;
-   animation-duration: 20s;
-   animation-delay: 5s;
-   animation-iteration-count: infinite;
    display: flex;
    justify-content: flex-end;
    align-items: center;
-}
-
-@keyframes zoom{
-0%{
-   transform: scale(1);
-}
-50%{
-   transform: scale(1.2) translateX(-5%)
-}
-100%{
-   transform: scale(1)
- }
+   height: 100vh;
 }
 
 .text-container {
    position: absolute;
    right: 75px;
-   text-align: end;
 }
 
 .text-container h5 {
+   width: 100%;
    font-family: 'Bitter', sans-serif;
    background: rgba(0,0,0,0.4);
-   border-left: 0.3rem solid var(--mainGreen);
+   border-bottom: 0.3rem solid var(--mainGreen);
+   border-radius: 3px;
    text-transform: uppercase;
    font-size: 1.5rem;
    font-weight: 300;
+   letter-spacing: 2px;
    padding: 5px 10px;
    display: inline-block;
+   text-align: center;
 }
 
 .text-container h2 {
@@ -101,6 +92,27 @@ a {
    font-size: 3rem;
    text-transform: uppercase;
    margin-top: 10px;
+   line-height: 25px;
+}
+
+.text-container .town-of {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 25px;
+}
+
+.text-container .town-of .line {
+   background: var(--mainWhite);
+   height: 2px;
+   width: 25%;
+   margin: 10px;
+}
+
+.text-container p {
+   text-transform: capitalize;
+   font-family: 'Courgette', sans-serif;
+   font-size: 1.2rem;
 }
 
 @media (max-width: 600px) {
@@ -112,21 +124,31 @@ a {
       font-size: 0.8rem;
    }
 
+   .text-container .town-of {
+      margin-top: 10px;
+   }
+
+   .text-container .town-of p {
+      font-size: 0.8rem;
+   }
+
    .text-container h2 {
       font-size: 1.5rem;
+      line-height: 5px;
    }
 }
 
 /* Attractions */
 .attractions {
-   padding-bottom: 50px;
+   padding: 50px 0;
+   background: var(--mainGreen);
+   border-bottom: 5px solid var(--mainGrey);
 }
 
 .attractions-title {
    display: flex;
    justify-content: center;
    align-items: center;
-   margin-top: 50px;
    font-size: 1.8rem;
    font-family: 'Bitter', sans-serif;
    text-transform: uppercase;
@@ -251,7 +273,7 @@ a {
    letter-spacing: 0.1rem;
    line-height: 1.5;
    margin-top: 1rem;
-   color: var(--mainGreen);
+   color: var(--mainBlack);
 }
 
 .about-img img,
@@ -295,36 +317,90 @@ a {
       width: 95%;
    }
 
+   .about-title p {
+      text-align: center;
+   }
+
    .about-img img,
    .bank-img img {
       width: 95%;
    }
 }
 
-.background {
-   background: url('../img/Rocky Gap 2.jpg') no-repeat center center/cover fixed;
-   height: 100vh;
+/* Bottom Logo Image */
+.bottom-logo {
+   background: #fff; 
 }
+
+.bottom-logo img {
+   width: 100%;
+}
+
+/* Footer Strip */
+/*.strip {
+   background: var(--mainWhite);
+   height: 5px;
+}*/
 
 /* footer section */
 .footer {
    background: var(--mainGreen);
-   padding: 25px;
 }
 
-.footer-icons {
+.footer-top {
+   padding: 15px 0;
+}
+
+.footer-top .footer-icons {
    display: flex;
-   justify-content: space-evenly;
+   justify-content: center;
 }
 
-.footer a {
-   font-size: 2rem;
+.footer-top a {
+   font-size: 1.5rem;
    text-decoration: none;
    text-align: center;
    color: var(--mainWhite);
    transition: all 1s ease-in-out;
+   margin: 0 10px;
 }
 
-.footer a:hover {
+.footer-top a:hover {
    color: var(--mainGrey);
 }
+
+.footer-top .copyright p {
+   text-align: center;
+   color: var(--mainWhite);
+   margin-top: 15px;
+}
+
+.footer .icons-line {
+   background: #fff;
+   width: 75%;
+   height: 1px;
+   margin: 0 auto;
+}
+
+.footer .designer {
+   text-align: center;
+   padding: 15px 0;
+}
+
+.footer .designer p {
+   color: var(--mainWhite);
+}
+
+.footer .designer a {
+   color: var(--mainWhite);
+   text-decoration: none;
+   font-size: 1rem;
+   margin: 0;
+}
+
+@media (max-width: 500px) {
+   .footer-top .copyright p {
+      padding: 0 25px;
+   }
+}
+
