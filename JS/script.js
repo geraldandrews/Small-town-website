@@ -1,7 +1,7 @@
 // NAVIGATION BAR //
 const navToggle = document.querySelector(".nav-toggle");
 const links = document.querySelector(".nav-links");
-const link = document.querySelectorAll('#page');
+const anchorLink = document.querySelectorAll('#page');
 const hamburger = document.getElementById('hamburger');
 const dropDown = document.querySelector('.dropdown');
 const subMenu = document.querySelector('.sub-menu');
@@ -20,7 +20,7 @@ navToggle.addEventListener("click", function () {
    }
 }); 
 
-link.addEventListener("click", function(e) {
+anchorLink.addEventListener("click", function(e) {
   links.classList.remove('show-links');
       hamburger.classList.toggle('cross');
       subMenu.classList.remove("show-dropdown");
