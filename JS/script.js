@@ -20,12 +20,6 @@ navToggle.addEventListener("click", function () {
    }
 }); 
 
-link.addEventListener("click", function () {
-     if (links.classList.contains("show-links")) {
-      links.classList.remove("show-links");
-     }
-});
-
 dropDown.addEventListener("click", function () {
      if (subMenu.classList.contains("show-dropdown")) {
        subMenu.classList.remove("show-dropdown");
