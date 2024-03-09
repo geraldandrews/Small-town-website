@@ -20,7 +20,7 @@ navToggle.addEventListener("click", function () {
    }
 }); 
 
-anchorList.forEach(anchorLink => {
+anchorSelector.forEach(anchorLink => {
 anchorLink.onclick = function(e) {
   links.classList.remove('show-links');
       hamburger.classList.toggle('cross');
