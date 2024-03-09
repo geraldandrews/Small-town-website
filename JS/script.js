@@ -50,8 +50,13 @@ let anchorList = document.querySelectorAll(anchorSelector);
       links.classList.remove("extend-navbar"); 
 
         e.preventDefault();
+
+        let destination = document.querySelector(this.hash);
+        destination.scrollIntoView({
+            behavior: 'smooth'
+        });
     }
-  });
+});
 
 
   
