@@ -1,7 +1,7 @@
 // NAVIGATION BAR //
 const navToggle = document.querySelector(".nav-toggle");
 const links = document.querySelector(".nav-links");
-const anchorLink = document.querySelectorAll('#page');
+const anchorSelector = document.querySelectorAll('#page');
 const hamburger = document.getElementById('hamburger');
 const dropDown = document.querySelector('.dropdown');
 const subMenu = document.querySelector('.sub-menu');
@@ -20,12 +20,14 @@ navToggle.addEventListener("click", function () {
    }
 }); 
 
+anchorList.forEach(anchorLink => {
 anchorLink.onclick = function(e) {
   links.classList.remove('show-links');
       hamburger.classList.toggle('cross');
       subMenu.classList.remove("show-dropdown");
       links.classList.remove("extend-navbar");
-}
+   }
+});
 
 dropDown.addEventListener("click", function () {
      if (subMenu.classList.contains("show-dropdown")) {
