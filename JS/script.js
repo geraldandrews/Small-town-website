@@ -22,7 +22,7 @@ navToggle.addEventListener("click", function () {
 const link = document.querySelectorAll('.nav-links a')
 
 link.forEach(l => {
-  l.addEventListener('click', () => {
+  l.addEventListener('hashchange', () => {
     links.classList.remove('show-links')
   });
 });
