@@ -35,8 +35,24 @@ dropDown.addEventListener("click", function () {
     const yourContainer = document.querySelector('nav-links');
     if(!links.contains(event.target)) {
        links.classList.remove("extend-navbar");
+       links.classList.remove("show-links
     }
  });
+
+let anchorSelector = '#section a[href^="#"]';
+let anchorList = document.querySelectorAll(anchorSelector);
+
+    anchorList.forEach(anchorLink => {
+    anchorLink.onclick = function (e) {
+      links.classList.toggle('show-links');
+      hamburger.classList.toggle('cross');
+      subMenu.classList.remove("show-dropdown");
+      links.classList.remove("extend-navbar"); 
+
+        e.preventDefault();
+    }
+  });
+
 
   
   
