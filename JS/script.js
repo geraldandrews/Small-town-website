@@ -43,7 +43,7 @@ let anchorList = document.querySelectorAll(anchorSelector);
 
     anchorList.forEach(anchorLink => {
     anchorLink.onclick = function (e) {
-      links.classList.toggle('show-links');
+      links.classList.remove('show-links');
       hamburger.classList.toggle('cross');
       subMenu.classList.remove("show-dropdown");
       links.classList.remove("extend-navbar");
