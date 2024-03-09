@@ -19,14 +19,6 @@ navToggle.addEventListener("click", function () {
    }
 }); 
 
-const link = document.querySelectorAll('.nav-links a')
-
-link.forEach(l => {
-  l.addEventListener('hashchange', () => {
-    links.classList.remove('show-links')
-  });
-});
-
 dropDown.addEventListener("click", function () {
      if (subMenu.classList.contains("show-dropdown")) {
        subMenu.classList.remove("show-dropdown");
