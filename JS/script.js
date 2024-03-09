@@ -39,6 +39,10 @@ dropDown.addEventListener("click", function () {
     }
  });
 
+link.addEventListener("click", function(e) {
+  links.classList.remove("show-links");
+});
+
  
 
 
