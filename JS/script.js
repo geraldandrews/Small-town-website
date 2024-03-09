@@ -38,9 +38,10 @@ dropDown.addEventListener("click", function () {
     }
  });
 
-let link = document.querySelectorAll('.nav-link');
+let anchorSelector = '#section a[href^="#"]';
+let anchorList = document.querySelectorAll(anchorSelector);
 
-    link.forEach(anchorLink => {
+    anchorList.forEach(anchorLink => {
     anchorLink.onclick = function (e) {
       links.classList.toggle('show-links');
       hamburger.classList.toggle('cross');
