@@ -38,7 +38,7 @@ dropDown.addEventListener("click", function () {
     }
  });
 
-let link = document.querySelectorAll(nav-link);
+let link = document.querySelectorAll('.nav-link');
 
     link.forEach(anchorLink => {
     anchorLink.onclick = function (e) {
