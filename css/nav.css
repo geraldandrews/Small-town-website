@@ -42,6 +42,7 @@
     text-decoration: none;
 }
 
+/* Navbar */ 
 .navbar {
     background: var(--mainGreen);
     padding: 25px 0;
@@ -333,4 +334,3 @@
         right: 0;
     }
  }
-
