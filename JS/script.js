@@ -1,6 +1,7 @@
 // NAVIGATION BAR //
 const navToggle = document.querySelector(".nav-toggle");
 const links = document.querySelector(".nav-links");
+const link = document.querySelectorAll('#page');
 const hamburger = document.getElementById('hamburger');
 const dropDown = document.querySelector('.dropdown');
 const subMenu = document.querySelector('.sub-menu');
@@ -18,6 +19,13 @@ navToggle.addEventListener("click", function () {
      links.classList.add("show-links");
    }
 }); 
+
+link.addEventListener("click", function(e) {
+  links.classList.remove('show-links');
+      hamburger.classList.toggle('cross');
+      subMenu.classList.remove("show-dropdown");
+      links.classList.remove("extend-navbar");
+});
 
 dropDown.addEventListener("click", function () {
      if (subMenu.classList.contains("show-dropdown")) {
@@ -38,7 +46,7 @@ dropDown.addEventListener("click", function () {
     }
  });
 
-let anchorSelector = '#page';
+/*let anchorSelector = '#page';
 let anchorList = document.querySelectorAll(anchorSelector);
 
     anchorList.forEach(anchorLink => {
@@ -48,7 +56,7 @@ let anchorList = document.querySelectorAll(anchorSelector);
       subMenu.classList.remove("show-dropdown");
       links.classList.remove("extend-navbar");
    }
-});
+});*/
  
 
 
