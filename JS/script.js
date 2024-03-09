@@ -35,7 +35,6 @@ dropDown.addEventListener("click", function () {
     const yourContainer = document.querySelector('nav-links');
     if(!links.contains(event.target)) {
        links.classList.remove("extend-navbar");
-       links.classList.remove("show-links
     }
  });
 
