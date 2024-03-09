@@ -42,7 +42,7 @@ dropDown.addEventListener("click", function () {
 let link = document.querySelectorAll(nav-link);
 
     link.forEach(anchorLink => {
-    link.onclick = function (e) {
+    anchorLink.onclick = function (e) {
       links.classList.toggle('show-links');
       hamburger.classList.toggle('cross');
       subMenu.classList.remove("show-dropdown");
