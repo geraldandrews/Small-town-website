@@ -40,7 +40,7 @@ dropDown.addEventListener("click", function () {
   });
 
   document.addEventListener("click", function(event){
-    const yourContainer = document.querySelector('nav-link');
+    const yourContainer = document.querySelector('nav-links');
     if(!links.contains(event.target)) {
        links.classList.remove("extend-navbar");
     }
