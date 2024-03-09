@@ -24,7 +24,6 @@ const link = document.querySelectorAll('.nav-links a')
 link.forEach(l => {
   l.addEventListener('click', () => {
     links.classList.remove('show-links')
-    hamburger.classList.toggle('cross');
   });
 });
 
