@@ -38,7 +38,7 @@ dropDown.addEventListener("click", function () {
     }
  });
 
-let anchorSelector = '#section';
+let anchorSelector = '#page';
 let anchorList = document.querySelectorAll(anchorSelector);
 
     anchorList.forEach(anchorLink => {
