@@ -20,7 +20,7 @@ navToggle.addEventListener("click", function () {
    }
 }); 
 
-anchorLink.addEventListener("click", function(e) {
+anchorLink.onclick = function(e) {
   links.classList.remove('show-links');
       hamburger.classList.toggle('cross');
       subMenu.classList.remove("show-dropdown");
