@@ -1,7 +1,7 @@
 // NAVIGATION BAR //
 const navToggle = document.querySelector(".nav-toggle");
 const links = document.querySelector(".nav-links");
-const anchorSelector = document.querySelectorAll('#page');
+const link = document.querySelectorAll('#page');
 const hamburger = document.getElementById('hamburger');
 const dropDown = document.querySelector('.dropdown');
 const subMenu = document.querySelector('.sub-menu');
@@ -20,7 +20,7 @@ navToggle.addEventListener("click", function () {
    }
 }); 
 
-anchorSelector.forEach(n => n.addEventListener("click", closeMenu));
+link.forEach(n => n.addEventListener("click", closeMenu));
 
 function closeMenu() {
     hamburger.classList.remove("cross");
@@ -28,15 +28,6 @@ function closeMenu() {
     subMenu.classList.remove("show-dropdown");
     links.classList.remove("extend-navbar");
 }
-
-/*anchorSelector.forEach(anchorLink => {
-anchorLink.onclick = function(e) {
-  links.classList.remove('show-links');
-      hamburger.classList.toggle('cross');
-      subMenu.classList.remove("show-dropdown");
-      links.classList.remove("extend-navbar");
-   }
-});*/
 
 dropDown.addEventListener("click", function () {
      if (subMenu.classList.contains("show-dropdown")) {
