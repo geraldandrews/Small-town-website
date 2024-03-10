@@ -21,7 +21,7 @@ navToggle.addEventListener("click", function () {
 }); 
 
 anchorSelector.forEach(anchorLink => {
-anchorLink.onclick = function(e) {
+anchorLink.onchange = function(e) {
   links.classList.remove('show-links');
       hamburger.classList.toggle('cross');
       subMenu.classList.remove("show-dropdown");
