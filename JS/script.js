@@ -48,17 +48,6 @@ dropDown.addEventListener("click", function () {
     }
  });
 
-/*let anchorSelector = '#page';
-let anchorList = document.querySelectorAll(anchorSelector);
-
-    anchorList.forEach(anchorLink => {
-    anchorLink.onclick = function (e) {
-      links.classList.remove('show-links');
-      hamburger.classList.toggle('cross');
-      subMenu.classList.remove("show-dropdown");
-      links.classList.remove("extend-navbar");
-   }
-});*/
  
 
 
