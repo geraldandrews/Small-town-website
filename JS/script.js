@@ -27,7 +27,6 @@ anchorLink.onclick = function(e) {
       subMenu.classList.remove("show-dropdown");
       links.classList.remove("extend-navbar");
    }
-  setTimeout(anchorLink, 5000);
 });
 
 dropDown.addEventListener("click", function () {
