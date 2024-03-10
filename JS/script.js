@@ -26,7 +26,8 @@ anchorLink.onclick = function(e) {
       hamburger.classList.toggle('cross');
       subMenu.classList.remove("show-dropdown");
       links.classList.remove("extend-navbar");
-   }, 4000
+   }
+  setTimeout(anchorLink, 5000);
 });
 
 dropDown.addEventListener("click", function () {
