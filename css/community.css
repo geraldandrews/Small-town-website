@@ -80,7 +80,7 @@
     text-decoration: none;
  }
 
-  .community .logo-img img {
+  .community .square-logo img {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -179,7 +179,7 @@
        width: 45%;
    }
  
-   .community .logo-img img {
+   .community .square-logo img {
       width: 65%;
       margin-top: 25px;
    }
