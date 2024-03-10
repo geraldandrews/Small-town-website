@@ -398,7 +398,7 @@ a {
    margin: 0;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
    .footer-top .copyright p {
       padding: 0 40px;
    }
