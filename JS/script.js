@@ -20,14 +20,23 @@ navToggle.addEventListener("click", function () {
    }
 }); 
 
-anchorSelector.forEach(anchorLink => {
+anchorSelector.forEach(n => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+    hamburger.classList.remove("cross");
+    links.classList.remove("show-links");
+    subMenu.classList.remove("show-dropdown");
+    links.classList.remove("extend-navbar");
+}
+
+/*anchorSelector.forEach(anchorLink => {
 anchorLink.onclick = function(e) {
   links.classList.remove('show-links');
       hamburger.classList.toggle('cross');
       subMenu.classList.remove("show-dropdown");
       links.classList.remove("extend-navbar");
    }
-});
+});*/
 
 dropDown.addEventListener("click", function () {
      if (subMenu.classList.contains("show-dropdown")) {
