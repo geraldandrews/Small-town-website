@@ -342,12 +342,6 @@ a {
    width: 100%;
 }
 
-/* Footer Strip */
-/*.strip {
-   background: var(--mainWhite);
-   height: 5px;
-}*/
-
 /* footer section */
 .footer {
    background: var(--mainGreen);
