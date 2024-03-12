@@ -63,7 +63,7 @@ a {
    display: flex;
    justify-content: flex-end;
    align-items: center;
-   height: 100vh;
+   height: 120vh;
 }
 
 .text-container {
