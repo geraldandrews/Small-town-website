@@ -29,7 +29,6 @@ function closeMenu() {
     links.classList.remove("show-links");
     subMenu.classList.remove("show-dropdown");
     links.classList.remove("extend-navbar");
-    setTimeout(closeMenu,5000);
 }
 
 dropDown.addEventListener("click", function () {
