@@ -31,18 +31,7 @@ function closeMenu() {
     links.classList.remove("extend-navbar");
 }
 
-homeLink.addEventListener("click", function () {
-    if (links.classList.contains("show-links")) {
-     links.classList.remove("show-links");
-     links.classList.remove("extend-navbar");
-   } else {
-     links.classList.add("show-links");
-   }
-
-  event.preventDefault()
-});
-     
-dropDown.addEventListener("click", function () {
+ dropDown.addEventListener("click", function () {
      if (subMenu.classList.contains("show-dropdown")) {
        subMenu.classList.remove("show-dropdown");
        links.classList.remove("extend-navbar");
