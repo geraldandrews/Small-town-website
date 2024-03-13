@@ -1,7 +1,8 @@
 // NAVIGATION BAR //
-const navToggle = document.querySelector(".nav-toggle");
-const links = document.querySelector(".nav-links");
+const navToggle = document.querySelector('.nav-toggle');
+const links = document.querySelector('.nav-links');
 const link = document.querySelectorAll('#page');
+const homeLink = document.querySelector('#home-page');
 const hamburger = document.getElementById('hamburger');
 const dropDown = document.querySelector('.dropdown');
 const subMenu = document.querySelector('.sub-menu');
@@ -31,6 +32,17 @@ function closeMenu() {
     links.classList.remove("extend-navbar");
 }
 
+homeLink.addEventListener("click", function () {
+    if (links.classList.contains("show-links")) {
+     links.classList.remove("show-links");
+     links.classList.remove("extend-navbar");
+   } else {
+     links.classList.add("show-links");
+   }
+
+  event.preventDefault()
+});
+     
 dropDown.addEventListener("click", function () {
      if (subMenu.classList.contains("show-dropdown")) {
        subMenu.classList.remove("show-dropdown");
