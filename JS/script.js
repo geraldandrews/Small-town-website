@@ -25,7 +25,7 @@ navToggle.addEventListener("click", function () {
 link.forEach(n => n.addEventListener("click", closeMenu));
 
 function closeMenu() {
-    hamburger.classList.remove("cross");
+    hamburger.classList.toggle("cross");
     links.classList.remove("show-links");
     subMenu.classList.remove("show-dropdown");
     links.classList.remove("extend-navbar");
