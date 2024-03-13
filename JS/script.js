@@ -2,7 +2,6 @@
 const navToggle = document.querySelector('.nav-toggle');
 const links = document.querySelector('.nav-links');
 const link = document.querySelectorAll('#page');
-const homeLink = document.querySelector('#home-page');
 const hamburger = document.getElementById('hamburger');
 const dropDown = document.querySelector('.dropdown');
 const subMenu = document.querySelector('.sub-menu');
