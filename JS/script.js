@@ -18,6 +18,8 @@ navToggle.addEventListener("click", function () {
    } else {
      links.classList.add("show-links");
    }
+
+  event.preventDefault()
 }); 
 
 link.forEach(n => n.addEventListener("click", closeMenu));
