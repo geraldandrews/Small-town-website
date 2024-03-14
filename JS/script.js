@@ -1,6 +1,7 @@
 // NAVIGATION BAR //
 const navToggle = document.querySelector('.nav-toggle');
 const links = document.querySelector('.nav-links');
+const homeImage = document.querySelector('.logo-img');
 const link = document.querySelectorAll('#page');
 const hamburger = document.getElementById('hamburger');
 const dropDown = document.querySelector('.dropdown');
@@ -9,6 +10,12 @@ const menuLinks = document.querySelector('.menu-links');
 
 hamburger.addEventListener('click', function(e) {
   hamburger.classList.toggle('cross');
+});
+
+homeImage.addEventListener("click", function () {
+  if (links.classList.contains("show-links")) {
+    links.classList.remove("show-links");
+  }
 });
 
 navToggle.addEventListener("click", function () {
