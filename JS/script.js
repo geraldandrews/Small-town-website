@@ -14,6 +14,7 @@ hamburger.addEventListener('click', function(e) {
 
 homeImage.addEventListener("click", function () {
   if (links.classList.contains("show-links")) {
+    hamburger.classList.toggle("cross");
     links.classList.remove("show-links");
   }
 });
