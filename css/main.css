@@ -211,6 +211,7 @@ a {
    background: none;
    color: var(--mainWhite);
    font-size: 1rem;
+   padding: 0;
 }
 
 .attraction-icon {
