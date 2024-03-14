@@ -205,12 +205,13 @@ a {
 .paragraph {
    color: var(--mainWhite);
    line-height: 25px;
+   font-size: 1.2rem;
 }
 
 .paragraph a {
    background: none;
    color: var(--mainWhite);
-   font-size: 1rem;
+   font-size: 1.2rem;
    font-weight: bold;
    padding: 0;
 }
@@ -288,6 +289,7 @@ a {
    line-height: 1.5;
    margin-top: 1rem;
    color: var(--mainBlack);
+   font-size: 1.2rem;
 }
 
 .about-img img,
