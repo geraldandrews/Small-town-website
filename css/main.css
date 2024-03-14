@@ -207,6 +207,12 @@ a {
    line-height: 25px;
 }
 
+.paragraph a {
+   background: none;
+   color: var(--mainWhite);
+   font-size: 1.2rem;
+}
+
 .attraction-icon {
    font-size: 3rem;
    color: var(--mainGreen);
