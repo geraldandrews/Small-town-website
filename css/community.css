@@ -1,4 +1,4 @@
-/** Community **/
+ /** Community **/
 .community {
     background: var(--mainWhite);
  }
@@ -115,7 +115,6 @@
  }
  
  .community .info-section2 .card h6 {
-    font-size: 1.2rem;
     font-weight: bolder;
     text-align: center;
     margin-top: 10px;
