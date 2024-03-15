@@ -85,8 +85,8 @@
  .government .cards-container .card h5 {
     background: var(--mainBlack);
     color: var(--mainWhite);
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     text-align: center;
     padding: 5px 0;
  }
