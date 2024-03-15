@@ -12,49 +12,49 @@ hamburger.addEventListener('click', function(e) {
   hamburger.classList.toggle('cross');
 });
 
-homeImage.addEventListener("click", function () {
-  if (links.classList.contains("show-links")) {
-    hamburger.classList.toggle("cross");
-    links.classList.remove("show-links");
+homeImage.addEventListener('click', function () {
+  if (links.classList.contains('show-links')) {
+    hamburger.classList.toggle('cross');
+    links.classList.remove('show-links');
   }
 });
 
-navToggle.addEventListener("click", function () {
-   if (links.classList.contains("show-links")) {
-     links.classList.remove("show-links");
-     links.classList.remove("extend-navbar");
+navToggle.addEventListener('click', function () {
+   if (links.classList.contains('show-links')) {
+     links.classList.remove('show-links');
+     links.classList.remove('extend-navbar');
    } else {
-     links.classList.add("show-links");
+     links.classList.add('show-links');
    }
 
   event.preventDefault()
 }); 
 
-link.forEach(n => n.addEventListener("click", closeMenu));
+link.forEach(n => n.addEventListener('click', closeMenu));
 
 function closeMenu() {
-    hamburger.classList.toggle("cross");
-    links.classList.remove("show-links");
-    subMenu.classList.remove("show-dropdown");
-    links.classList.remove("extend-navbar");
+    hamburger.classList.toggle('cross');
+    links.classList.remove('show-links');
+    subMenu.classList.remove('show-dropdown');
+    links.classList.remove('extend-navbar');
 }
 
- dropDown.addEventListener("click", function () {
-     if (subMenu.classList.contains("show-dropdown")) {
-       subMenu.classList.remove("show-dropdown");
-       links.classList.remove("extend-navbar");
-       menuLinks.classList.add("active");
+ dropDown.addEventListener('click', function () {
+     if (subMenu.classList.contains('show-dropdown')) {
+       subMenu.classList.remove('show-dropdown');
+       links.classList.remove('extend-navbar');
+       menuLinks.classList.add('active');
     } else {
-       subMenu.classList.add("show-dropdown");
-       links.classList.add("extend-navbar");
-       menuLinks.classList.remove("active");
+       subMenu.classList.add('show-dropdown');
+       links.classList.add('extend-navbar');
+       menuLinks.classList.remove('active');
      }
   });
 
-  document.addEventListener("click", function(event){
+  document.addEventListener('click', function(event){
     const yourContainer = document.querySelector('nav-links');
     if(!links.contains(event.target)) {
-       links.classList.remove("extend-navbar");
+       links.classList.remove('extend-navbar');
     }
  });
 
