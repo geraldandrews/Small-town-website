@@ -82,25 +82,25 @@
     margin: 50px 0px;
  }
  
- .government .cards-container .card .department-info {
-    padding: 10px 0;
- }
- 
  .government .cards-container .card h5 {
     background: var(--mainBlack);
     color: var(--mainWhite);
-    padding: 5px;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     text-align: center;
+    padding: 5px 0;
  }
  
- .government .cards-container .card .bold {
+ .government .cards-container .card h6 {
     font-weight: bolder;
+    font-size: 1rem;
+    margin: 10px 0;
  }
  
  .government .cards-container .card p {
     text-align: center;
+    line-height: 15px;
+    margin: 10px 0;
  }
  
  .government .cards-container .card img {
