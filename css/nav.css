@@ -266,7 +266,7 @@
         height: 0;
         overflow: hidden;
         transition: all 0.3s linear;
-        transform: translateY(11px);
+        transform: translateY(35px);
     }
 
     .nav-links .nav-link:nth-child(4) {
@@ -279,11 +279,11 @@
     } 
  
     .show-links {
-        height: 15rem;
+        height: 16rem;
     }
  
     .extend-navbar {
-        height: 26rem;
+        height: 27rem;
     }
  
    .plus:before, 
