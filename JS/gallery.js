@@ -20,7 +20,7 @@ window.onload = () => {
                   image.addEventListener('click', function() {
                   caption.innerHTML = image.getAttribute('alt');
                });
-           });
+        });
 
            gallery[i].onclick = () => {
             clickedImgIndex = i; //passing cliked image index to created variable (clickedImgIndex)
@@ -37,7 +37,7 @@ window.onload = () => {
             if(newIndex == 0){ //if index value is equal to 0 then hide prevBtn
                 prevBtn.style.display = "none"; 
             }
-            if(newIndex >= gallery.length - 1){ //if index value is greater and equal to gallery length by -1 then hide nextBtn
+            if(newIndex >= gallery.length - 1){ 
                 nextBtn.style.display = "none"; 
             }
             prevBtn.onclick = () => { 
@@ -65,7 +65,7 @@ window.onload = () => {
             mainBox.classList.add("show"); 
             shadow.style.display = "block"; 
             closeIcon.onclick = () => {
-                newIndex = clickedImgIndex; //assigning user first clicked img index to newIndex
+                newIndex = clickedImgIndex; 
                 prevBtn.style.display = "block"; 
                 nextBtn.style.display = "block";
                 mainBox.classList.remove("show");
@@ -73,7 +73,5 @@ window.onload = () => {
                 document.querySelector("body").style.overflow = "scroll";
             }
         }
-        
     }
-    
 }
