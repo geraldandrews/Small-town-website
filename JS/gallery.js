@@ -8,7 +8,7 @@ totalImg = mainBox.querySelector(".total-img"),
 caption = document.getElementById("caption"),
 shadow = document.querySelector(".img-shadow");
 
-document.addEventListener("DOMContentLoaded", function(arg) {
+window.onload = () => {
     for (let i = 0; i < gallery.length; i++) {
         totalImg.textContent = gallery.length; //passing total img length to totalImg variable
         let newIndex = i; //passing i value to newIndex variable
