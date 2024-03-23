@@ -73,13 +73,11 @@ window.onload = () => {
 
     anchor.addEventListener('click', e => {
       e.preventDefault();
-      let parentTarget = e.currentTarget.href;
       let target = e.target.href;
       
       transitionElement.classList.add('active');
 
       setTimeout(() => {
-        window.location.href = parentTarget;
         window.location.href = target;
       }, 450)
     });
