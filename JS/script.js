@@ -58,32 +58,6 @@ function closeMenu() {
     }
  });
 
-// Page Transition //
-window.onload = () => {
-  const transitionElement = document.querySelector('.page-transition');
-  const anchors = document.querySelectorAll('#page'); 
-
-  setTimeout(() => {
-     transitionElement.classList.remove('active');
-
-  }, 450);
-
-  for (let i = 0; i < anchors.length; i++) {
-    const anchor = anchors[i];
-
-    anchor.addEventListener('click', e => {
-      e.preventDefault();
-      let target = e.target.href;
-      
-      transitionElement.classList.add('active');
-
-      setTimeout(() => {
-        window.location.href = target;
-      }, 450)
-    });
-  }
-}
-
 
 
  
