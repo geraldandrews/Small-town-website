@@ -412,5 +412,11 @@ a {
    }
 }
 
+/* Page Transition */
+.transition-2 {
+  transition: 0.5s ease-out;
+}
+
+
 
 
