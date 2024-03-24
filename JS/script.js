@@ -61,6 +61,8 @@ function closeMenu() {
 // Page Transition //
 document.addEventListener("DOMContentLoaded", () => {
   const anchors = document.querySelectorAll('#page'); 
+  const homeLink = document.querySelector('#home');
+  
     for (let i = 0; i < anchors.length; i++) {
     const anchor = anchors[i];
 
