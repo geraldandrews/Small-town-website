@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       setTimeout(() => {
         window.location.href = target;
-      }, 500)
+      }, 400)
     });
   }
 
@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     setTimeout(() => {
       window.location.href = currentTarget;
-    }, 500)
+    }, 400)
   });
 });
 
