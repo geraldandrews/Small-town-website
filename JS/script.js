@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       setTimeout(() => {
         window.location.href = target;
-      }, 300)
+      }, 400)
     });
   }
 
