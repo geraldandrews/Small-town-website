@@ -60,7 +60,6 @@ function closeMenu() {
 
 // Page Transition //
 document.addEventListener("DOMContentLoaded", () => {
-  const transitionElement = document.querySelector('.transition');
   const anchors = document.querySelectorAll('#page'); 
     for (let i = 0; i < anchors.length; i++) {
     const anchor = anchors[i];
@@ -74,6 +73,15 @@ document.addEventListener("DOMContentLoaded", () => {
       }, 500)
     });
   }
+
+  homeLink.addEventListener('click', e => {
+    e.preventDefault();
+    let currentTarget = e.currentTarget.href;
+
+    setTimeout(() => {
+      window.location.href = currentTarget;
+    }, 500)
+  });
 });
 
 
