@@ -57,17 +57,18 @@ a {
 
 .header-container {
    background: url('../img/bg.png');
-   background-position: center;
+   background-position: 25% 95%;
    background-size: cover;
    background-repeat: no-repeat;
    display: flex;
    justify-content: flex-end;
    align-items: center;
-   height: 120vh;
+   height: 100vh;
 }
 
 .text-container {
    position: absolute;
+   top: 60%;
    right: 75px;
 }
 
