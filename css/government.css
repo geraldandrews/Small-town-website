@@ -73,7 +73,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 25px;
-    margin: 50px 150px;
+    padding: 50px 150px;
  }
  
  .government .cards-container .card {
