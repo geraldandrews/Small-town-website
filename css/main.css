@@ -424,6 +424,12 @@ a {
    margin: 0;
 }
 
+@media (max-width: 820px) {
+  .footer {
+     margin-top: -4px !important;
+  }
+}
+
 @media (max-width: 600px) {
    .footer-top .copyright p {
       padding: 0 40px;
