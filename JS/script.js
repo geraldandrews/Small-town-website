@@ -58,7 +58,7 @@ function closeMenu() {
     }
  });
 
-// Page Transition //
+/*  Page Transition 
 document.addEventListener("DOMContentLoaded", () => {
   const anchors = document.querySelectorAll('#page'); 
   const homeLink = document.querySelector('#home');
@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = currentTarget;
     }, 400)
   });
-});
+}); */
 
 
 
