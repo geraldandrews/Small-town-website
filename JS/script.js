@@ -84,7 +84,23 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = currentTarget;
     }, 400)
   });
-}); 
+});
+
+// Header Slider
+const sliderImages = document.querySelectorAll('.header-container img');
+const nextImageDelay = 5000;
+let currentImageCounter = 0;
+
+sliderImages[currentImageCounter].style.opacity = 1;
+
+setInterval(nextImage, nextImageDelay);
+
+function nextImage() {
+  sliderImages[currentImageCounter].style.opacity = 0;
+  currentImageCounter = (currentImageCounter+1) % sliderImages.length;
+  sliderImages[currentImageCounter].style.opacity = 1;
+}
+
 
 
 
