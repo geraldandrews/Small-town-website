@@ -1,4 +1,3 @@
-// Gallery Functionality
 const gallery  = document.querySelectorAll(".gallery-img"),
 mainBox = document.querySelector(".main-box"),
 previewImg = mainBox.querySelector("img"),
@@ -10,9 +9,9 @@ shadow = document.querySelector(".img-shadow");
 
 window.onload = () => {
     for (let i = 0; i < gallery.length; i++) {
-        totalImg.textContent = gallery.length; //passing total img length to totalImg variable
-        let newIndex = i; //passing i value to newIndex variable
-        let clickedImgIndex; //creating new variable
+        totalImg.textContent = gallery.length; 
+        let newIndex = i; 
+        let clickedImgIndex; 
 
         let images = document.querySelectorAll('.gallery img');
                 let caption = document.getElementById('caption');
@@ -23,25 +22,25 @@ window.onload = () => {
         });
 
            gallery[i].onclick = () => {
-            clickedImgIndex = i; //passing cliked image index to created variable (clickedImgIndex)
+            clickedImgIndex = i; 
             function preview() {
-                currentImg.textContent = newIndex + 1; //passing current img index to currentImg varible with adding +1
-                let imageURL = gallery[newIndex].querySelector("img").src; //getting user clicked img url
-                previewImg.src = imageURL; //passing user clicked img url in previewImg src 
+                currentImg.textContent = newIndex + 1; 
+                let imageURL = gallery[newIndex].querySelector("img").src; 
+                previewImg.src = imageURL;  
                 caption.innerHTML = images[newIndex].alt;
             }
-            preview(); //calling above function
+            preview(); 
               
             const prevBtn = document.querySelector(".prev");
             const nextBtn = document.querySelector(".next");
-            if(newIndex == 0){ //if index value is equal to 0 then hide prevBtn
+            if(newIndex == 0){ 
                 prevBtn.style.display = "none"; 
             }
             if(newIndex >= gallery.length - 1){ 
                 nextBtn.style.display = "none"; 
             }
             prevBtn.onclick = () => { 
-                newIndex--; //decrement index
+                newIndex--; 
                 if(newIndex == 0) {
                     preview(); 
                     prevBtn.style.display = "none"; 
@@ -51,7 +50,7 @@ window.onload = () => {
                 } 
             }
             nextBtn.onclick = () => { 
-                newIndex++; //increment index
+                newIndex++; 
                 if(newIndex >= gallery.length - 1){
                     preview();
                     nextBtn.style.display = "none";
