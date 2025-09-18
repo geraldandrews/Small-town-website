@@ -270,6 +270,10 @@ a {
    .attractions-row {
       grid-template-columns: 1fr;
    }
+
+  .attractions-title {
+      font-size: 1.5rem;
+  }
 }
 
 /* about */
