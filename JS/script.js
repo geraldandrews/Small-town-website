@@ -55,6 +55,7 @@ function closeMenu() {
     const yourContainer = document.querySelector('nav-links');
     if(!links.contains(event.target)) {
        links.classList.remove('extend-navbar');
+       subMenu.classList.remove('show-dropdown');
     }
  });
 
